@@ -1,0 +1,25 @@
+name: Accessibility review (formulier)
+description: Maak een nieuw issue aan met een formulier
+title: Accessibility ― <component-naam>
+labels:
+  - accessibility
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vervang in de titel van het issue `<component-naam>` door de officiële naam van de component
+  - type: input
+    attributes:
+      label: Storybook URL
+      description: URL naar de Storybook pagina van het component
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Taken
+      value: |
+        - [x] De titel van dit issue is aangepast en bevat de naam van de component
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
